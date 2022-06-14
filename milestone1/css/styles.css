@@ -1,0 +1,41 @@
+/* DEBUG */
+.b-debug {
+  border: 1px dashed red;
+}
+/* DEBUG */
+
+:root {
+  --bs-body-bg: rgb(217, 217, 214);
+}
+
+#banner {
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.main-container {
+  height: calc(100vh - 5rem);
+  position: relative;
+  border: 3px black solid;
+  margin: 2.5rem auto;
+  background-color: rgb(217, 217, 214);
+}
+
+
+/**************** UTILITIES **************
+****************************************** */
+.full-height {
+  height: 100%;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+/**************** CONTENT ***************
+******************************************/
