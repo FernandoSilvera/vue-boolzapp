@@ -169,4 +169,10 @@ new Vue({
     contacts: contatti,
     contactAvatar: contatti.avatar,
   },
+
+  methods: {
+    currentContact(contact, i) {
+      
+    }
+  }
 })
