@@ -167,5 +167,12 @@ new Vue({
 
   data: {
     contacts: contatti,
+    contactAvatar: contatti.avatar,
   },
+
+  methods: {
+    currentContact(contact, i) {
+      
+    }
+  }
 })
