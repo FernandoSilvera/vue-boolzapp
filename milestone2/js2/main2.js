@@ -167,7 +167,7 @@ new Vue({
 
   data: {
     contacts: contatti,
-    currentContact: contatti[0],
+    currentContact: [],
   },
 
   methods: {
