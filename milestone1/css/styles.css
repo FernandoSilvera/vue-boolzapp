@@ -1,7 +1,7 @@
 /* DEBUG */
-.b-debug {
+/* .b-debug {
   border: 1px dashed red;
-}
+} */
 /* DEBUG */
 
 :root {
@@ -36,6 +36,20 @@
   height: 60px;
   border-radius: 50%;
   overflow: hidden;
+}
+
+.received {
+  background-color: white;
+  padding: 1rem 1rem;
+  padding-right: 10rem;
+  border-radius: 10px;
+}
+
+.sent {
+  background-color: rgb(200, 250, 170);
+  padding: 1rem 1rem;
+  padding-right: 10rem;
+  border-radius: 10px;
 }
 /**************** CONTENT ***************
 ******************************************/
