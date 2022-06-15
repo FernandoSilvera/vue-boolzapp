@@ -168,7 +168,8 @@ new Vue({
   data: {
     contacts: contatti,
     currentContact: contatti[0],
-    allMessages: contatti[0].messages,
+    contactMessages: contatti[0].messages,
+    userMessage: "",
   },
 
   methods: {
@@ -177,8 +178,21 @@ new Vue({
       console.log(this.currentContact);
     },
     getMessages() {
-      this.allMessages = this.currentContact.messages;
-      console.log(this.allMessages);
+      this.contactMessages = this.currentContact.messages;
+      console.log(this.contactMessages);
+    },
+    sendUserMessage() {
+      const d = new Date().toLocaleString();
+
+      this.contactMessages.push(
+        {
+            date: d,
+            message: this.userMessage,
+            status: "sent",
+        },
+      )
+      console.log(this.contactMessages);
+      this.userMessage = ""
     }
   }
 })
