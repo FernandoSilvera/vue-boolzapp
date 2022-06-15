@@ -173,6 +173,7 @@ new Vue({
   methods: {
     getCurrentContact(contact) {
       this.currentContact = contact;
+      console.log(this.currentContact);
     }
   }
 })
