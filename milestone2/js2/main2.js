@@ -167,13 +167,18 @@ new Vue({
 
   data: {
     contacts: contatti,
-    currentContact: [],
+    currentContact: contatti[0],
+    allMessages: contatti[0].messages,
   },
 
   methods: {
     getCurrentContact(contact) {
       this.currentContact = contact;
       console.log(this.currentContact);
+    },
+    getMessages() {
+      this.allMessages = this.currentContact.messages;
+      console.log(this.allMessages);
     }
   }
 })
