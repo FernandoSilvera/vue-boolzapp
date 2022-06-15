@@ -172,7 +172,7 @@ new Vue({
 
   methods: {
     getCurrentContact(contact) {
-      this.currentContact.splice(0, 1, contact);
+      this.currentContact = contact;
     }
   }
 })
