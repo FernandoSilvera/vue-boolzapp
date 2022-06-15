@@ -167,12 +167,12 @@ new Vue({
 
   data: {
     contacts: contatti,
-    currentContact: [],
+    currentContact: contatti[0],
   },
 
   methods: {
-    returnContact(contact, i) {
-      this.currentContact = contact[i];
+    getCurrentContact(contact) {
+      this.currentContact.splice(0, 1, contact);
     }
   }
 })

@@ -72,7 +72,7 @@
 
             <!-- ----- CHATS ----- -->
             <div class="flex-grow-1 overflow-auto">
-              <div style="cursor: pointer;" class="row" v-for="(contact, i) in contacts" @click="returnContact">
+              <div style="cursor: pointer;" class="row" v-for="(contact, i) in contacts" @click="getCurrentContact(contact)">
                 <div class="b-debug col-2">
                   <div class="py-1 px-0">
                     <img :src="`../img/avatar${contact.avatar}.jpg`" :alt="`${contact.name} avatar`" class="avatar">
