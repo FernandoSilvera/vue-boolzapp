@@ -194,8 +194,8 @@ new Vue({
       console.log(this.contactMessages);
       this.userMessage = ""
 
-      function answerMessage(contactMessages) {
-        contactMessages.push(
+      function answerMessage(contact) {
+        contact.push(
           {
             date: "",
             message: "Ok",
