@@ -170,6 +170,7 @@ new Vue({
     currentContact: contatti[0],
     contactMessages: contatti[0].messages,
     userMessage: "",
+    searchUser: "",
   },
 
   methods: {
@@ -177,10 +178,12 @@ new Vue({
       this.currentContact = contact;
       console.log(this.currentContact);
     },
+
     getMessages() {
       this.contactMessages = this.currentContact.messages;
       console.log(this.contactMessages);
     },
+
     sendUserMessage() {
       const d = new Date().toLocaleString();
 
