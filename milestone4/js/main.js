@@ -209,5 +209,9 @@ new Vue({
 
       setTimeout(answerMessage, 1000, this.contactMessages);
     },
+
+    deleteMessage(i) {
+      this.contactMessages.splice(i, 1);
+    }
   }
 })
