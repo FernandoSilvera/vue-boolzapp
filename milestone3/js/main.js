@@ -204,7 +204,7 @@ new Vue({
         )
       }
 
-      setTimeout(answerMessage(this.contactMessages), 10000);
+      setTimeout(answerMessage(this.contactMessages), 1000);
     },
   }
 })
