@@ -192,7 +192,7 @@ new Vue({
         }
       )
       console.log(this.contactMessages);
-      this.userMessage = ""
+      this.userMessage = "";
 
       function answerMessage(contact) {
         contact.push(
@@ -204,7 +204,7 @@ new Vue({
         )
       }
 
-      setTimeout(answerMessage(this.contactMessages), 1000);
+      setTimeout(answerMessage, 1000, this.contactMessages);
     },
   }
 })
